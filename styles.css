@@ -9,29 +9,107 @@ Dark Grayish Magenta: hsl(303, 10%, 53%)
 Light Grayish Magenta: hsl(300, 24%, 96%)
 White: hsl(0, 0%, 100%) */
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    min-width: calc(100vh - 0.1px);
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    font-family: 'League Spartan', sans-serif;
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
 }
 
-main{
-    margin: 1rem 5rem;
-    justify-content: center;
-    align-items: center;
+main {
+  margin: 5rem 0.8rem;
 }
 
-ul{
-    list-style: none;
-    list-style-type: none;
+ul {
+  list-style: none;
+  list-style-type: none;
+}
+ul li {
+  background-color: hsl(300, 24%, 96%);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.625rem;
+}
+.stars ul li span {
+  display: block;
+  letter-spacing: 0.2rem;
 }
 
+.stars ul li p {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-top: 0.7rem;
+}
+
+.stars {
+  margin: 2.5rem 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: hsl(300, 43%, 22%);
+}
+
+.header p {
+  margin: 1.5rem 1rem;
+  color: hsl(303, 10%, 53%);
+  font-weight: 300;
+  font-size: 1.16rem;
+  line-height: 1.5rem;
+}
+
+.reviews {
+  margin: 0 1rem;
+}
+
+.reviews .card {
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(0, 0%, 100%);
+  margin: 1rem 0;
+  border-radius: 0.625rem;
+  /* padding: 1rem 2rem 2rem; */
+  padding: 1rem 2rem 2rem 1rem;
+}
+.reviews .card .writer {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  line-height: 1.2rem;
+}
+
+.reviews .card .review {
+  text-align: left;
+  line-height: 1.3rem;
+  margin-left: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.reviews .card .writer img {
+  display: flex;
+  border-radius: 50%;
+  scale: 50%;
+}
+.role {
+  color: hsl(333, 80%, 67%);
+}
+
+.reviews .card .writer .info {
+  display: inline block;
+}
+.reviews .card .writer .info .name,
+.reviews .card .writer .info .role {
+  font-size: 1.1rem;
+}
